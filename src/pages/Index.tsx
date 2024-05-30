@@ -1,13 +1,20 @@
 import React from "react";
+import { useTranslateOnly } from "@/lib/languageUtils";
+
+// Images
 import Background from "@/assets/img/top-bg.png";
 import Logo from "@/assets/img/logotricktreat.svg";
 import Jack from "@/assets/img/jack.png";
 import PartyOne from "@/assets/img/party1.png";
 import PartyTwo from "@/assets/img/party2.png";
 import PartyThree from "@/assets/img/party3.png";
+
+// Styles
 import "@/assets/css/style.css";
 
 export const Index: React.FC = () => {
+	const { t } = useTranslateOnly();
+
 	return (
 		<>
 			<div className="flex flex-col items-center">
@@ -20,9 +27,9 @@ export const Index: React.FC = () => {
 						<img src={Jack} alt="Jack Pumpkin" />
 						<div className="flex flex-col items-center gap-14">
 							<div className="flex flex-col font-outfit text-pumpkin-dark uppercase font-bold">
-								<p className="text-[32px]">the best</p>
-								<p className="text-[56px] -mt-4">halloween</p>
-								<p className="text-[32px] text-end -mt-4">party!</p>
+								<p className="text-[32px]">{t('thebest')}</p>
+								<p className="text-[56px] -mt-4">{t('halloween')}</p>
+								<p className="text-[32px] text-end -mt-4">{t('party')}</p>
 							</div>
 							<div className="flex items-center gap-8">
 								<div className="flex flex-col gap-8">
