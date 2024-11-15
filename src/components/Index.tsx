@@ -17,11 +17,11 @@ export const Index = () => {
 
 	const floatJackAnimation = {
 		y: [-10, 40, -10],
-        x: [-10, 60, -10],
+        x: [-10, 40, -10],
 		transition: {
 			duration: 2,
 			repeat: Infinity,
-			repeatType: "loop",
+			repeatType: "loop" as const,
 		},
 	};
 
