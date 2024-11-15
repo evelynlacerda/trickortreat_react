@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Structor } from '../layouts/Structor'
-import { Index } from '@/pages/Index'
+import { Index } from '@/components/Index'
 
 export const Router: React.FC = () => {
   return (
