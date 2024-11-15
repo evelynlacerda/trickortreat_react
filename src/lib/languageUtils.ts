@@ -13,16 +13,16 @@ export const useLanguage = () => {
 		const newLanguage = currentLanguage === "en" ? "pt-br" : "en";
 		changeLanguage(newLanguage);
 		setCurrentLanguage(newLanguage);
-  };
-  
-  return {
-    t,
-    handleChangeLanguage,
-  }
+	};
+
+	return {
+		t,
+		currentLanguage,
+		handleChangeLanguage,
+	};
 };
 
-
 export const useTranslateOnly = () => {
-  const { t } = useTranslation();
-  return { t };
+	const { t } = useTranslation();
+	return { t };
 };
