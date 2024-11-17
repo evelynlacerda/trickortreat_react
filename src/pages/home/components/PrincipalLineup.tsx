@@ -2,15 +2,15 @@ import { LINEUP_ITEMS } from "@/constants/lineup";
 import { useTranslation } from "react-i18next";
 import { FaClock, FaMapLocationDot } from "react-icons/fa6";
 
-export const Lineup = () => {
+export const PrincipalLineup = () => {
 	const { t } = useTranslation();
 	return (
 		<>
-			<div className="tickets w-full py-3 text-center bg-blue-1 text-pumpkin-dark font-medium">
+			<div className="tickets-cta w-full py-3 text-center bg-blue-1 text-pumpkin-dark font-medium">
 				<span>{t("Click here and buy your ticket")}</span>
 			</div>
-			<div className="lineup w-full bg-pumpkin-dark text-blue-1 flex justify-center py-11">
-				<div className="w-[1080px] flex gap-5">
+			<div className="lineup-cta w-full bg-pumpkin-dark text-blue-1 flex justify-center py-11">
+				<div className="w-[1200px] flex gap-5">
 					{LINEUP_ITEMS.map((item) => (
 						<div className="line flex-grow flex items-center gap-5 p-6 rounded-3xl">
 							<div className="flex flex-col items-center justify-center">

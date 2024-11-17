@@ -10,7 +10,7 @@ export const Footer = () => {
 		<footer className="w-full footer">
 			<img src={Cemitery} alt="Cemitery" className="w-full" />
 			<div className="sub-footer flex items-center flex-col w-full">
-				<div className="flex gap-2 w-[1080px] justify-between mb-12">
+				<div className="flex gap-2 w-[1200px] justify-between mb-12">
 					<h6>{t("Hello Hallow")}</h6>
 					<div className="flex flex-col gap-2">
 						<p>{t("Festival")}</p>
@@ -56,7 +56,7 @@ export const Footer = () => {
 					</div>
 				</div>
 				<div className="copyright w-full flex justify-center">
-					<div className="w-[1080px] flex justify-end my-8">
+					<div className="w-[1200px] flex justify-end my-8">
 						<span>{t("© Treat or Trick Festival. All rights reserved.")}</span>
 					</div>
 				</div>

@@ -7,10 +7,12 @@
     cursor: pointer;
 }
 
-.tickets {
+.tickets-cta {
     font-size: 20px;
 }
 
-.lineup .line {
+.lineup-cta .line {
     box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.15), 0 0 10px rgba(0, 0, 0, 0.25);
 }
+
+/* Lineup */

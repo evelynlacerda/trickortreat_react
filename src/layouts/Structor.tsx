@@ -9,9 +9,7 @@ export const Structor: React.FC = () => {
 	return (
 		<React.StrictMode>
 			<div className="w-full flex flex-col items-center static">
-				<div className="absolute w-[1080px]">
-					<Header />
-				</div>
+				<Header />
 				<Outlet />
 				<Footer />
 			</div>
