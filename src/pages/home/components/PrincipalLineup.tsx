@@ -1,4 +1,4 @@
-import { LINEUP_ITEMS } from "@/constants/lineup";
+import { PRINCIPAL_LINEUP_ITEMS } from "@/constants/lineup";
 import { useTranslation } from "react-i18next";
 import { FaClock, FaMapLocationDot } from "react-icons/fa6";
 
@@ -11,8 +11,8 @@ export const PrincipalLineup = () => {
 			</div>
 			<div className="lineup-cta w-full bg-pumpkin-dark text-blue-1 flex justify-center py-11">
 				<div className="w-[1200px] flex gap-5">
-					{LINEUP_ITEMS.map((item) => (
-						<div className="line flex-grow flex items-center gap-5 p-6 rounded-3xl">
+					{PRINCIPAL_LINEUP_ITEMS.map((item) => (
+						<div key={item.key} className="line flex-grow flex items-center gap-5 p-6 rounded-3xl">
 							<div className="flex flex-col items-center justify-center">
 								<p className="text-8xl">{item.date}</p>
 								<p className="px-2 py-1 uppercase text-sm tracking-[.3em] bg-blue-1 text-pumpkin-dark">

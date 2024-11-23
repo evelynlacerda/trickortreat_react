@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         outfit: ["Outfit", "sans-serif"],
+        hennypenny: ["Henny Penny", "serif", "system-ui"],
       },
       colors: {
         "background": "#00162B",
